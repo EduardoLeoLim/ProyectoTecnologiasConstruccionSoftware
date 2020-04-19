@@ -26,7 +26,7 @@
         </Grid>
         <ScrollViewer Margin="0,0,200,100" VerticalScrollBarVisibility="Auto">
             <StackPanel>
-                
+                <!--Mensajes ennviados y recibidos-->
             </StackPanel>
         </ScrollViewer>
     </Grid>
