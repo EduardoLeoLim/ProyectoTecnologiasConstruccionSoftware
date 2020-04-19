@@ -1,0 +1,25 @@
+﻿<Page x:Class="DelegacionMunicipal.Interfaces.RegistroConductores"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DelegacionMunicipal.Interfaces"
+      mc:Ignorable="d" 
+      d:DesignHeight="460"
+      Title="RegistroConductores" Width="850">
+    <Grid Background="White">
+        <DataGrid x:Name="datosConductores" IsReadOnly="True" AutoGenerateColumns="False" Margin="40,80,40,40"  HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="18" >
+            <DataGrid.Columns>
+                <DataGridTextColumn CanUserResize="False" Header="Apellido Paterno" Binding="{Binding ApellidoPaterno}" FontSize="16" FontWeight="Medium"/>
+                <DataGridTextColumn CanUserResize="False" Header="Apellido Materno" Binding="{Binding ApellidoMaterno}" FontSize="16" FontWeight="Medium"/>
+                <DataGridTextColumn CanUserResize="False" Header="Nombre" Binding="{Binding Nombre}" FontSize="16" FontWeight="Medium"/>
+                <DataGridTextColumn CanUserResize="False" Header="Teléfono" Binding="{Binding NumeroTelefono}" FontSize="16" FontWeight="Medium"/>
+                <DataGridTextColumn CanUserResize="False" Header="Licencia" Binding="{Binding NumeroLicencia}" FontSize="16" FontWeight="Medium"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Registro de Conductores" HorizontalAlignment="Left" Margin="40,16,0,0" VerticalAlignment="Top" Width="245" FontWeight="Bold" FontSize="20"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="703,34,0,0" VerticalAlignment="Top" Width="75" Background="#FFE05350" Foreground="White" FontSize="16" BorderBrush="#FFB8403E" RenderTransformOrigin="2.387,0.6"/>
+        <Button Content="Editar" HorizontalAlignment="Left" Margin="601,33,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Foreground="White" Background="#FF3489C6" BorderBrush="#FF256B9C"/>
+        <Button Content="Nuevo" HorizontalAlignment="Left" Margin="498,33,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#FF3C9C4B" Foreground="White" Background="#FF4DB75D" FontSize="16" Click="RegistrarConductor"/>
+    </Grid>
+</Page>

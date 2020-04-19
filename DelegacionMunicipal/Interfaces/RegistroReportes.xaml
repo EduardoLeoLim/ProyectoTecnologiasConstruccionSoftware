@@ -1,0 +1,58 @@
+﻿<Page x:Class="DelegacionMunicipal.Interfaces.RegistroReportes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DelegacionMunicipal.Interfaces"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistroReportes">
+
+    <Grid Background="White">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" >
+            <Grid>
+                <Button Content="Nuevo" HorizontalAlignment="Left" Margin="498,33,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#FF3C9C4B" Foreground="White" Background="#FF4DB75D" FontSize="16" Click="RegistrarReporte"/>
+                <Label Content="Registro de Reportes" HorizontalAlignment="Left" Margin="40,16,0,0" VerticalAlignment="Top" Width="245" FontWeight="Bold" FontSize="20"/>
+                <DataGrid x:Name="datosReportes" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left"  Margin="40,80,0,40"  HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="18" >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn CanUserResize="False" Header="Fecha" FontSize="16" FontWeight="Medium"/>
+                        <DataGridTextColumn CanUserResize="False" Header="Municipio" FontSize="16" FontWeight="Medium"/>
+                        <DataGridTextColumn CanUserResize="False" Header="Localidad" FontSize="16" FontWeight="Medium"/>
+                        <DataGridTextColumn CanUserResize="False" Header="Domicilio" FontSize="16" FontWeight="Medium"/>
+                        <DataGridTextColumn CanUserResize="False" Header="Responsable" FontSize="16" FontWeight="Medium"/>
+                        <DataGridTextColumn CanUserResize="False" Header="Dictaminado" FontSize="16" FontWeight="Medium"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Label Content="Detalles del reporte" HorizontalAlignment="Left" Margin="880,53,0,0" VerticalAlignment="Top" Width="245" FontWeight="Bold" FontSize="20"/>
+                <Label Content="Datos del conductor" HorizontalAlignment="Left" Margin="695,104,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+                <Label Content="Nombre Completo: " HorizontalAlignment="Left" Margin="730,140,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="No. de licencia: " HorizontalAlignment="Left" Margin="730,174,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Téléfono: " HorizontalAlignment="Left" Margin="1018,174,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Datos del vehiculo" HorizontalAlignment="Left" Margin="695,224,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+                <Label Content="No. de placas: " HorizontalAlignment="Left" Margin="730,260,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Marca: " HorizontalAlignment="Left" Margin="1018,260,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Modelo: " HorizontalAlignment="Left" Margin="730,294,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Año: " HorizontalAlignment="Left" Margin="1018,294,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Color: " HorizontalAlignment="Left" Margin="730,328,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Dirección" HorizontalAlignment="Left" Margin="695,357,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+                <Label Content="Municipio: " HorizontalAlignment="Left" Margin="730,394,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Localidad: " HorizontalAlignment="Left" Margin="964,394,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Asentamiento: " HorizontalAlignment="Left" Margin="732,428,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Calle: " HorizontalAlignment="Left" Margin="733,462,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Vehiculos involucrados" HorizontalAlignment="Left" Margin="695,496,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.58,2.468"/>
+                <Label Content="Imagenes" HorizontalAlignment="Left" Margin="695,619,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.58,2.468"/>
+                <Label Content="Dictamen" HorizontalAlignment="Left" Margin="695,738,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.58,2.468"/>
+                <Label Content="Folio: " HorizontalAlignment="Left" Margin="733,769,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Perito: " HorizontalAlignment="Left" Margin="917,768,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Fecha: " HorizontalAlignment="Left" Margin="734,802,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Hora: " HorizontalAlignment="Left" Margin="917,802,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Label Content="Descripción: " HorizontalAlignment="Left" Margin="734,843,0,0" VerticalAlignment="Top" FontSize="14"/>
+                <Border BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Height="200" Width="500" Margin="746,877,50,0" >
+                    <TextBlock TextWrapping="Wrap" Text="Descripción del dictamen" VerticalAlignment="Top" Height="199" HorizontalAlignment="Left" />
+
+                </Border>
+                
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>

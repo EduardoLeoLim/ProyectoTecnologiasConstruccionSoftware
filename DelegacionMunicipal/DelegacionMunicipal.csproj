@@ -53,8 +53,41 @@
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Interfaces\FormularioConductor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\FormularioReporte.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\FormularioVehiculo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\MenuPrincipal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\RegistroConductores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\RegistroReportes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\RegistroVehiculos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\SalaChat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -62,12 +95,37 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Interfaces\FormularioConductor.xaml.cs">
+      <DependentUpon>FormularioConductor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FormularioReporte.xaml.cs">
+      <DependentUpon>FormularioReporte.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FormularioVehiculo.xaml.cs">
+      <DependentUpon>FormularioVehiculo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\MenuPrincipal.xaml.cs">
+      <DependentUpon>MenuPrincipal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\RegistroConductores.xaml.cs">
+      <DependentUpon>RegistroConductores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\RegistroReportes.xaml.cs">
+      <DependentUpon>RegistroReportes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\RegistroVehiculos.xaml.cs">
+      <DependentUpon>RegistroVehiculos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\SalaChat.xaml.cs">
+      <DependentUpon>SalaChat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Conductor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
