@@ -1,0 +1,23 @@
+﻿<Window x:Class="DireccionGeneral.interfaces.MenuPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DireccionGeneral.interfaces"
+        mc:Ignorable="d"
+        Title="Dirección general" Height="580" Width="1010" MinHeight="580" MinWidth="1010" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Width="160" HorizontalAlignment="Left" Background="#FF2F3264">
+            <Button x:Name="btnInterfazUsuarios" Content="Usuarios" HorizontalAlignment="Left" Margin="0,80,0,0" VerticalAlignment="Top" Width="160" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Height="35" HorizontalContentAlignment="Left" Padding="20,1,1,1" Cursor="Hand" Click="MostrarInterfazUsuarios"/>
+            <Button x:Name="btnIntefazDelegaciones" Content="Delegaciones" HorizontalAlignment="Left" Margin="0,130,0,0" VerticalAlignment="Top" Width="160" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Height="35" HorizontalContentAlignment="Left" Padding="20,1,1,1" Cursor="Hand" Click="MostrarIntefazDelegaciones"/>
+            <Button x:Name="btnInterfazReportes" Content="Reportes" HorizontalAlignment="Left" Margin="0,180,0,0" VerticalAlignment="Top" Width="160" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Height="35" HorizontalContentAlignment="Left" Padding="20,1,1,1" Cursor="Hand" Click="MostrarInterfazReportes"/>
+            <Button x:Name="btnInterfazChat" Content="Chat" HorizontalAlignment="Left" Margin="0,230,0,0" VerticalAlignment="Top" Width="160" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Height="35" HorizontalContentAlignment="Left" Padding="20,1,1,1" Cursor="Hand" Click="MostrarInterfazChat"/>
+            <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="0,280,0,0" VerticalAlignment="Top" Width="160" FontSize="18" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" Background="{x:Null}" Height="35" HorizontalContentAlignment="Left" Padding="20,1,1,1" Cursor="Hand" Click="ClickSalir"/>
+        </Grid>
+        <Grid Height="70" VerticalAlignment="Top" Margin="160,0,0,0" Background="#FF2558C7">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Sistema de Gestión de Reportes de Siniestros Vehiculares" FontWeight="Bold" Foreground="White" FontSize="22"/>
+        </Grid>
+        <Frame x:Name="framePrincipal" Margin="160,70,0,0" NavigationUIVisibility="Hidden" />
+
+    </Grid>
+</Window>

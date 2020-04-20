@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Proyecto_TCS\Sistema de Gestion de Reportes de Siniestros Vehiculares\DireccionGeneral\App.xaml
-11151548125
+9-1607264012
 
-6229340447
+13737140869
 13-1505183044
-MainWindow.xaml;
+interfaces\FormularioDelegacion.xaml;interfaces\FormularioDictamen.xaml;interfaces\FormularioUsuario.xaml;interfaces\MenuPrincipal.xaml;interfaces\RegistroDelegaciones.xaml;interfaces\RegistroReportes.xaml;interfaces\SalaChat.xaml;Login.xaml;interfaces\RegistroUsuarios.xaml;
 
-True
+False
 

@@ -8,9 +8,9 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="RegistroReportes">
 
-    <Grid Background="White">
+    
         <ScrollViewer HorizontalScrollBarVisibility="Auto" >
-            <Grid>
+            <Grid Background="White">
                 <Button Content="Nuevo" HorizontalAlignment="Left" Margin="498,33,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#FF3C9C4B" Foreground="White" Background="#FF4DB75D" FontSize="16" Click="RegistrarReporte"/>
                 <Label Content="Registro de Reportes" HorizontalAlignment="Left" Margin="40,16,0,0" VerticalAlignment="Top" Width="245" FontWeight="Bold" FontSize="20"/>
                 <DataGrid x:Name="datosReportes" IsReadOnly="True" AutoGenerateColumns="False" HorizontalAlignment="Left"  Margin="40,80,0,40"  HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="18" >
@@ -20,7 +20,7 @@
                         <DataGridTextColumn CanUserResize="False" Header="Localidad" FontSize="16" FontWeight="Medium"/>
                         <DataGridTextColumn CanUserResize="False" Header="Domicilio" FontSize="16" FontWeight="Medium"/>
                         <DataGridTextColumn CanUserResize="False" Header="Responsable" FontSize="16" FontWeight="Medium"/>
-                        <DataGridTextColumn CanUserResize="False" Header="Dictaminado" FontSize="16" FontWeight="Medium"/>
+                        <DataGridTextColumn CanUserResize="False" Header="Estatus" FontSize="16" FontWeight="Medium"/>
                     </DataGrid.Columns>
                 </DataGrid>
                 <Label Content="Detalles del reporte" HorizontalAlignment="Left" Margin="880,53,0,0" VerticalAlignment="Top" Width="245" FontWeight="Bold" FontSize="20"/>
@@ -47,12 +47,12 @@
                 <Label Content="Fecha: " HorizontalAlignment="Left" Margin="734,802,0,0" VerticalAlignment="Top" FontSize="14"/>
                 <Label Content="Hora: " HorizontalAlignment="Left" Margin="917,802,0,0" VerticalAlignment="Top" FontSize="14"/>
                 <Label Content="Descripción: " HorizontalAlignment="Left" Margin="734,843,0,0" VerticalAlignment="Top" FontSize="14"/>
-                <Border BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Height="200" Width="500" Margin="746,877,50,0" >
+                <Border BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" Height="200" Width="500" Margin="746,877,50,30" >
                     <TextBlock TextWrapping="Wrap" Text="Descripción del dictamen" VerticalAlignment="Top" Height="199" HorizontalAlignment="Left" />
 
                 </Border>
                 
             </Grid>
         </ScrollViewer>
-    </Grid>
+    
 </Page>

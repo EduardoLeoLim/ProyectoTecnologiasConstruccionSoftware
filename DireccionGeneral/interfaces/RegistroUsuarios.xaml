@@ -1,0 +1,30 @@
+﻿<Page x:Class="DireccionGeneral.interfaces.RegistroUsuarios"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DireccionGeneral"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="RegistroUsuarios"  HorizontalAlignment="Left">
+
+    <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
+        <Grid Background="White">
+            <Label Content="Usuarios" HorizontalAlignment="Left" Margin="40,16,0,0" VerticalAlignment="Top" Width="97" FontWeight="Bold" FontSize="20"/>
+            <Button Content="Eliminar" HorizontalAlignment="Left" Margin="853,34,0,0" VerticalAlignment="Top" Width="75" Background="#FFE05350" Foreground="White" FontSize="16" BorderBrush="#FFB8403E" RenderTransformOrigin="2.387,0.6"/>
+            <Button Content="Editar" HorizontalAlignment="Left" Margin="751,33,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Foreground="White" Background="#FF3489C6" BorderBrush="#FF256B9C"/>
+            <Button Content="Nuevo" HorizontalAlignment="Left" Margin="648,33,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#FF3C9C4B" Foreground="White" Background="#FF4DB75D" FontSize="16" Click="RegistrarUsuario"/>
+            <DataGrid x:Name="datosUsuarios" IsReadOnly="True" AutoGenerateColumns="False" Margin="40,80,40,30"  HorizontalContentAlignment="Left" FontWeight="Bold" Width="900" FontSize="18" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn CanUserResize="False" Header="Apellido Paterno" FontSize="16" FontWeight="Medium"/>
+                    <DataGridTextColumn CanUserResize="False" Header="Apellido Materno" FontSize="16" FontWeight="Medium"/>
+                    <DataGridTextColumn CanUserResize="False" Header="Nombre" FontSize="16" FontWeight="Medium"/>
+                    <DataGridTextColumn CanUserResize="False" Header="Cargo" FontSize="16" FontWeight="Medium"/>
+                    <DataGridTextColumn CanUserResize="False" Header="Delegación" FontSize="16" FontWeight="Medium"/>
+                    <DataGridTextColumn CanUserResize="False" Header="Usuario" FontSize="16" FontWeight="Medium"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -55,7 +55,53 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="interfaces\FormularioDelegacion.xaml.cs">
+      <DependentUpon>FormularioDelegacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\FormularioDictamen.xaml.cs">
+      <DependentUpon>FormularioDictamen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\FormularioUsuario.xaml.cs">
+      <DependentUpon>FormularioUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\RegistroDelegaciones.xaml.cs">
+      <DependentUpon>RegistroDelegaciones.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\RegistroReportes.xaml.cs">
+      <DependentUpon>RegistroReportes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\RegistroUsuarios.xaml.cs">
+      <DependentUpon>RegistroUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Page Include="interfaces\FormularioDelegacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="interfaces\FormularioDictamen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="interfaces\FormularioUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="interfaces\MenuPrincipal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="interfaces\RegistroDelegaciones.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="interfaces\RegistroReportes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="interfaces\SalaChat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,10 +109,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="interfaces\MenuPrincipal.xaml.cs">
+      <DependentUpon>MenuPrincipal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="interfaces\SalaChat.xaml.cs">
+      <DependentUpon>SalaChat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="interfaces\RegistroUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
